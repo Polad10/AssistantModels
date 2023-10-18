@@ -5,4 +5,4 @@ interface Payment {
   treatment_id: number
 }
 
-export default Payment
+export {Payment as default, Payment}

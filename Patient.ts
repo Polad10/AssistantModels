@@ -7,4 +7,4 @@ interface Patient {
   extra_info: string
 }
 
-export default Patient
+export {Patient as default, Patient}

@@ -5,4 +5,4 @@ interface Appointment {
   treatment_id: number
 }
 
-export default Appointment
+export {Appointment as default, Appointment}

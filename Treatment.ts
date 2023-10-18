@@ -6,4 +6,4 @@ interface Treatment {
   patient_id: number
 }
 
-export default Treatment
+export {Treatment as default, Treatment}
