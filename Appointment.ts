@@ -1,7 +1,7 @@
 interface Appointment {
   id: number
   datetime: string
-  actions: string | null
+  actions: string | null | undefined
   treatment_id: number
 }
 
