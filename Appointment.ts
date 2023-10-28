@@ -1,8 +1,15 @@
-interface Appointment {
-  id: number
+interface BaseAppointment {
   datetime: string
   actions: string | null | undefined
   treatment_id: number
 }
 
-export {Appointment as default, Appointment}
+interface Appointment extends BaseAppointment {
+  id: number
+}
+
+interface AppointmentRequest extends BaseAppointment {
+  id: number | null | undefined
+}
+
+export { Appointment, AppointmentRequest }
