@@ -9,7 +9,7 @@ interface Appointment extends BaseAppointment {
 }
 
 interface AppointmentRequest extends BaseAppointment {
-  id: number | null | undefined
+  id?: number | null | undefined
 }
 
 export { Appointment, AppointmentRequest }

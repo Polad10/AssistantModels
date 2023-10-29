@@ -1,9 +1,17 @@
-interface Treatment {
-  id: number
+interface BaseTreatment {
   start_date: string
   title: string
-  finished: boolean
   patient_id: number
 }
 
-export {Treatment as default, Treatment}
+interface Treatment extends BaseTreatment {
+  id: number
+  finished: boolean
+}
+
+interface TreatmentRequest extends BaseTreatment {
+  id?: number | null | undefined
+  finished?: boolean | null | undefined
+}
+
+export { Treatment, TreatmentRequest }
